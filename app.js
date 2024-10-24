@@ -14,7 +14,7 @@ app.use(express.json());
 app.use("/api", postRoutes);
 
 app.listen(config.PORT, () => {
-  console.log("Server started on port 3000");
+  console.log(`Server running on port http://localhost:${config.PORT}`);
 });
 
 module.exports = app;
