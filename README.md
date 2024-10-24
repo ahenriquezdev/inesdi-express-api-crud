@@ -20,7 +20,7 @@ Esta API permite gestionar publicaciones (posts), permitiendo crear, obtener, ac
 3. Crea un archivo `.env` en la raíz del proyecto para configurar el puerto de la aplicación (opcional):
 
    ```
-   PORT=3000
+   PORT=8000
    ```
 
 ## Uso
@@ -31,7 +31,7 @@ Para iniciar el servidor, ejecuta el siguiente comando:
 npm start
 ```
 
-La API estará corriendo en `http://localhost:3000`.
+La API estará corriendo en `http://localhost:8000`.
 
 ## Endpoints
 
