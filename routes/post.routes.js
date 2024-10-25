@@ -8,15 +8,17 @@ const {
   deletePost
 } = require("../controllers/post.controller");
 
+const authMiddleware = require("../middlewares/auth.middleware");
+
 // 1. POST /api/posts
-router.post("/posts", addPost)
+router.post("/posts", authMiddleware, addPost)
 // 2. GET /api/posts
-router.get("/posts", getPosts)
+router.get("/posts", authMiddleware, getPosts)
 // 3. GET /api/posts/:id
-router.get("/posts/:id", getPost)
+router.get("/posts/:id", authMiddleware, getPost)
 // 4. PUT /api/posts/:id
-router.patch("/posts/:id", updatePost)
+router.patch("/posts/:id", authMiddleware, updatePost)
 // 5. DELETE /api/posts/:id
-router.delete("/posts/:id", deletePost)
+router.delete("/posts/:id", authMiddleware, deletePost)
 
 module.exports = router
