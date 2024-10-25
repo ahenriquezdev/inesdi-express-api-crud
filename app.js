@@ -2,7 +2,6 @@ const express = require("express");
 const app = express();
 const { initialiteDatabase } = require("./config/db.config");
 const config = require("./config/config");
-const authMiddleware = require("./middlewares/auth.middleware");
 
 initialiteDatabase();
 
@@ -11,7 +10,6 @@ const userRoutes = require("./routes/user.routes");
 
 // middlewares
 app.use(express.json());
-// app.use(authMiddleware);
 
 // custom routes
 app.use("/api", postRoutes);
