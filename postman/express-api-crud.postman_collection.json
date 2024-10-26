@@ -737,7 +737,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"john@doe.com\",\r\n    \"password\": \"123457\"\r\n}",
+							"raw": "{\r\n    \"email\": \"john@doe.com\",\r\n    \"password\": \"123456\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "text"
@@ -774,6 +774,28 @@
 							"path": [
 								"api",
 								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "verify",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/users/verify/671d355e8f001d1313b587b9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"users",
+								"verify",
+								"671d355e8f001d1313b587b9"
 							]
 						}
 					},
